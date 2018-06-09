@@ -14,22 +14,40 @@ Description: Drawing app
    <!-- Bootstrap -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
    <!-- jQuery UI -->
-   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/jquery-ui.css">
   </head>    
 
   <body>
-    
-   <div id="header" class="alert alert-success text-center">Drawing app</div> 
-    
-    
-  <!-- Main script file -->    
-  <script src="js/script.js"></script> 
-  <!-- Boostrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+   <!-- Header --> 
+   <div id="header" class="alert alert-success text-center">Drawing App</div> 
+   
+   <!-- Color input container -->
+   <div class="inputContainer" style="">
+      
+       <!-- color -->
+       <div class="input" id="colorInput">
+          <label for="color-input" class="col-4 col-form-label"><strong>Color:</strong></label>
+           
+            <input style="width: 6em; height: 3em;" class="form-control" type="color" value="#563d7c" id="color-input" id="paintColor" list>
+        
+           
+           <!-- Size -->
+           <label for="color-input" class="col-4 col-form-label"><strong>Select size:</strong></label>
+           <div></div>
+           <div class="input" style="font-size: 1.1em;">
+           <div id="slider"></div>
+           </div>
+       </div>
+   </div>
+     
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- jQuery UI -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>                        
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- Boostrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>   
+  <!-- Main script file -->    
+  <script src="js/script.js"></script>                        
     
   </body>   
     

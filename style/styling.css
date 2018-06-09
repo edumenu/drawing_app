@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background: url(art.jpg) center center fixed;
+    background-size: cover;   
+}
+
+#header{
+     width: 70%;
+    background-color: rgba(78,2,2,0.8);
+    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 4vw;
+    color: aliceblue;
+    line-height: 40px;
+    box-shadow: 0px 3px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 3px rgba(0,0,0,0.2);
+}

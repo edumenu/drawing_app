@@ -24,18 +24,22 @@ Description: Drawing app
    <!-- Color input container -->
    <div class="inputContainer" style="">
       
-       <!-- color -->
+       <!-- Color input -->
        <div class="input" id="colorInput">
+         
           <label for="color-input" class="col-4 col-form-label"><strong>Color:</strong></label>
-           
-            <input style="width: 6em; height: 3em;" class="form-control" type="color" value="#563d7c" id="color-input" id="paintColor" list>
+          <!-- Color -->
+          <input style="width: 6em; height: 3em;" class="form-control" type="color" value="#563d7c" id="color-input" id="paintColor" list>
+          <!-- /Color -->
         
-           
            <!-- Size -->
            <label for="color-input" class="col-4 col-form-label"><strong>Select size:</strong></label>
-           <div></div>
-           <div class="input" style="font-size: 1.1em;">
+           <div class="input" id="thicknessInput">
+             <div id="circle"></div>   
+           </div>
+           <div class="input" style="font-size: 1.1em;margin-top:2em;">
            <div id="slider"></div>
+           <!-- /Size -->
            </div>
        </div>
    </div>

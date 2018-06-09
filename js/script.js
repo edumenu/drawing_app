@@ -5,10 +5,9 @@ $(function(){
      min: 3, 
      max: 30,
      slide: function(event, ui){
-         //accessin the value of the slider
+         //accessin the value of the slider and changing th esize of the slider
          $("#circle").height(ui.value);
          $("#circle").width(ui.value);
-         
      }   
    }); 
     

@@ -29,7 +29,7 @@ Description: Drawing app
          
           <label for="color-input" class="col-4 col-form-label"><strong>Color:</strong></label>
           <!-- Color -->
-          <input style="width: 6em; height: 3em;" class="form-control" type="color" value="#563d7c" id="color-input" id="paintColor" list>
+          <input style="width: 6em; height: 3em;" class="form-control" type="color" value="#000000" id="paintColor" list>
           <!-- /Color -->
         
            <!-- Size -->
@@ -48,21 +48,37 @@ Description: Drawing app
     <!-- Drawing screen -->
    <div class="container" style="width: 100%;">
     <!-- Canvas -->
-    <canvas id="paint" width="500px" height="400px"></canvas>
+    <canvas id="paint" width="600px" height="400px"></canvas>
 
    </div>
    
-
-       
-<!--    <span id="erase" class="button">Button 1</span>-->
+    <!-- Buttons: Erase, Save and Reset -->
     <div class="btn-toolbar" id="containerButton">
       <button id="erase" type="button" class="btn btn-outline-info btn-lg button" style="margin-right: 10%">Erase</button>
       <button id="save" type="button" class="btn btn-outline-info btn-lg button" style="margin-right: 10%">Save</button>
       <button id="reset" type="button" class="btn btn-outline-info btn-lg button" style="margin-right: 10%">Reset</button>
     </div>     
        
-    
-    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reset</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to remove drawing?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" id="yes">Yes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
        
      
   <!-- jQuery -->

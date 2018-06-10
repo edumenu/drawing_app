@@ -41,7 +41,7 @@ $(function(){
     if(paint == true){
         if(paint_erase == "paint"){
             //Choose color
-            ctx.strokeStyle = "red";
+            ctx.strokeStyle = $("#paintColor").val();
            }else{
             //Select white color for erasing 
              ctx.strokeStyle = "white";  
@@ -80,14 +80,21 @@ $(function(){
     
   //Clicking on the reset button to clear canvas
   $("#reset").click(function(){
-      //Clear a rectangle within the canvas 
+ 
+      //Display modal
+      $('#myModal').modal('show');
+      
+      //Remove drawing when yes is clicked
+      $("#yes").click(function(){
+               //Clear a rectangle within the canvas 
       //first two parameters: coordinate top left points
       //second two paramters: coordinate of the bottom right points
       ctx.clearRect(0,0,canvas.width, canvas.height);
       //Going back to pain mode
       paint_erase = "paint";
       //Removing the active class on the erase button
-      $("#erase").removeClass("active");
+      $("#erase").removeClass("active"); 
+      });
   }); 
     
   //Saving drawn image    
@@ -99,9 +106,14 @@ $(function(){
           localStorage.setItem("imageCanvas",canvas.toDataURL());
           
         }else{
-          window.alert("Your device does not support local storage");        
+          window.alert("Your device does not support local storage!");        
         }
-    });        
+    }); 
+    
+    //Accessing and changing the color input
+    $("#paintColor").change(function(){
+       $("#circle").css("background-color",$(this).val()); 
+    });
       
     //Setting the slider size
    $("#slider").slider({

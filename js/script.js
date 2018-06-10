@@ -18,7 +18,7 @@ $(function(){
      img.src = localStorage.getItem("imageCanvas");
      
  }     
- ctx.lineWidth = 3;    //Setting the drawing parameters (lineWidth, lineJoin, lineCap)
+ ctx.lineWidth = 10;    //Setting the drawing parameters (lineWidth, lineJoin, lineCap)
  ctx.lineJoin = "round";  //Defines the point between two lines
  ctx.lineCap = "round";    //Defines the points at the begining and the end of each line
  

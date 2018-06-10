@@ -53,6 +53,14 @@ body{
     position: relative;
 }
 
+/*Canvas*/
+#paint{
+    background-color: whitesmoke;
+    cursor: crosshair;
+    height: 30em;
+    width: 100%;
+}
+
 /*Container for buttons*/
 #containerButton{
    width: 350px;
